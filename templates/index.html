@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Portfolio{% endblock %}
+
+{% block content %}
+
+<section class="hero-section">
+
+    <div class="hero-left">
+        <h1>Hi! Waqar</h1>
+        <p class="role">Product Designer</p>
+        <p class="description">
+            Designing user-friendly interfaces and seamless user experiences.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#" class="btn light-btn">Let's Talk</a>
+            <a href="#" class="btn dark-btn">Download CV</a>
+        </div>
+    </div>
+
+    <div class="hero-center">
+        <img src="{{ url_for('static', filename='images/profile.png') }}" alt="Profile Image">
+    </div>
+
+    <div class="hero-right">
+        <div class="stat">
+            <h2>07+</h2>
+            <p>Years of experience</p>
+        </div>
+
+        <div class="stat">
+            <h2>750+</h2>
+            <p>Projects delivered</p>
+        </div>
+
+        <div class="stat">
+            <h2>07+</h2>
+            <p>Countries served</p>
+        </div>
+    </div>
+
+</section>
+
+{% endblock %}
